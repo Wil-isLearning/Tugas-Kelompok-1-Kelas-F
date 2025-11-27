@@ -23,8 +23,11 @@ class CalculatorLogic:
 
     #LOGIC UTAMA
     def add_input(self, value):
-        self.expression += str(value)
+        symbol_map = {"×": "*", "÷": "/"}
+        clean_value = symbol_map.get(value, value)
+        self.expression += str(clean_value)
         self._update_display()
+
 
     def clear_all(self):
         self.expression = ""
@@ -45,3 +48,4 @@ class CalculatorLogic:
         except Exception:
             self.expression = ""
             self._update_display("Error")
+
