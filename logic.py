@@ -8,14 +8,13 @@ class CalculatorLogic:
 
     #DISPLAY FORMAT
     def _format_display(self, text):
-        """Mengubah simbol internal ke simbol cantik."""
         return (
             text.replace("*", "×")
                 .replace("/", "÷")
         )
 
     def _update_display(self, text=None):
-        """Update display dengan format cantik."""
+        #Update display dengan format agar lebih indah
         if self.update_callback:
             raw_text = self.expression if text is None else text
             formatted = self._format_display(raw_text)
@@ -48,4 +47,5 @@ class CalculatorLogic:
         except Exception:
             self.expression = ""
             self._update_display("Error")
+
 
