@@ -38,14 +38,18 @@ class ButtonPanel:
             command=self.logic.calculate
         ).grid(row=1, column=2, columnspan=2, sticky="nsew", padx=5, pady=5)
 
-        #Tombol angka & operator lain
+       #Tombol angka & operator lain
         for r, row in enumerate(buttons):
             for c, text in enumerate(row):
+        
+                operator_map = {"x": "*", "÷": "/"}
+                send_value = operator_map.get(text, text)
+        
                 ctk.CTkButton(
                     parent,
                     text=text,
                     font=("Segoe UI", 22),
                     fg_color="#2b2b2b" if text.isdigit() or text == "." else "#0047b2",
                     hover_color="#3a3a3a" if text.isdigit() else "#0066ff",
-                    command=lambda t=text: self.logic.add_input(t)
+                    command=lambda t=send_value: self.logic.add_input(t)
                 ).grid(row=r + 2, column=c, sticky="nsew", padx=5, pady=5)
