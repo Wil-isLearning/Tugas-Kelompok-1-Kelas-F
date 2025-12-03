@@ -1,27 +1,18 @@
-Cara Menjalankan Program dari Repository GitHub
-Buka link repository publik GitHub yang telah diberikan.
+Cara Menjalankan Program Kalkulator Sederhana 
 
+1. Buka browser di komputer Anda.
 
-Klik tombol Code (warna hijau) yang berada di bagian atas daftar file.
+2. Ketik alamat github.com lalu tekan Enter.
 
+3. Di halaman utama GitHub, klik tombol Sign Up dan lakukan pendaftaran akun baru (jika belum memiiki akun github).
 
-Pilih Download ZIP untuk mengunduh seluruh project ke perangkat.
+4. Setelah berhasil login, buka link repository program:
+   https://github.com/Wil-isLearning/Tugas-Kelompok-1-Kelas-F
 
+5. Di halaman repository cari tombol hijau bertuliskan Code lalu klik.
 
-Ekstrak file ZIP ke dalam folder lokal.
+6. Pilih Download ZIP. File ZIP akan terunduh ke folder Downloads.
 
+7. Buka File Explorer lalu masuk ke folder Downloads.
 
-Pastikan Python sudah terinstall di perangkat (minimal Python 3.x).
-
-
-Buka folder hasil ekstraksi, lalu cari file main.py sebagai file utama program.
-
-
-Jalankan program melalui terminal atau command prompt dengan perintah:
-
- python main.py
-Jika Tkinter belum terinstall, instal terlebih dahulu (Windows biasanya sudah 
-include).
-
-
-Setelah perintah dijalankan, aplikasi kalkulator akan tampil dan siap digunakan.
+8. Cari file ZIP yang baru diunduh. Klik kanan lalu pilih Extract All.
