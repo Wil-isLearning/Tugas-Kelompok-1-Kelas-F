@@ -16,3 +16,14 @@ Cara Menjalankan Program Kalkulator Sederhana
 7. Cari file ZIP yang baru diunduh. Klik kanan lalu pilih Extract All.
 
 8. Buka folder hasil ekstrak. Pastikan file seperti main.py terlihat.
+
+9. Install Python; Buka browser dan masuk ke python.org/downloads.
+
+10. Download Python untuk Windows lalu jalankan installer.
+
+11. Centang Add Python to PATH. Klik Install Now.
+
+12. Setelah instalasi selesai, buka Command Prompt; Tekan tombol Windows lalu ketik cmd, tekan Enter.
+
+13. Ketik python --version. Jika muncul versi Python berarti instalasi berhasil.
+
