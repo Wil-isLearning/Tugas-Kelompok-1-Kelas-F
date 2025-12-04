@@ -1,29 +1,76 @@
-Cara Menjalankan Program Kalkulator Sederhana 
+A. Judul Program: Nama aplikasi yang jelas.
 
-1. Buka browser di komputer Anda. Ketik alamat github.com lalu tekan Enter.
 
-2. Di halaman utama GitHub, klik tombol Sign Up dan lakukan pendaftaran akun baru (jika belum memiiki akun github).
 
-3. Setelah berhasil login, buka link repository program:
-   https://github.com/Wil-isLearning/Tugas-Kelompok-1-Kelas-F
+B. Pendahuluan: Memberikan gambaran umum tentang perangkat lunak dan Penjelasan mengenai apa fungsi program tersebut.
 
-4. Di halaman repository cari tombol hijau bertuliskan Code lalu klik pilih Download ZIP.
 
-5. File ZIP akan terunduh ke folder Downloads.
 
-6. Buka File Explorer lalu masuk ke folder Downloads.
+C. Fitur Utama: Daftar fitur yang dimiliki program.
 
-7. Cari file ZIP yang baru diunduh. Klik kanan lalu pilih Extract All.
 
-8. Buka folder hasil ekstrak. Pastikan file seperti main.py terlihat.
 
-9. Install Python; Buka browser dan masuk ke python.org/downloads.
+D. Panduan Instalasi: Langkah-langkah untuk mengunduh dan menyiapkan program (misal: git clone, install library). 
 
-10. Download Python untuk Windows lalu jalankan installer.
 
-11. Centang Add Python to PATH. Klik Install Now.
 
-12. Setelah instalasi selesai, buka Command Prompt; Tekan tombol Windows lalu ketik cmd, tekan Enter.
+E. Panduan Menjalankan: Perintah untuk menjalankan / konfigurasi program (misal: python app.py).
 
-13. Ketik python --version. Jika muncul versi Python berarti instalasi berhasil.
+
+
+F. Dokumentasi Teknis: Rancangan sistem menggunakan diagram flowchart disertai penjelasan
+
+Flowchart program dalam format mermaid.
+```mermaid
+flowchart TD
+    A[Mulai] --> B[Inisialisasi Display]
+    B --> C[Inisialisasi CalculatorLogic]
+    C --> D[Inisialisasi ButtonPanel]
+    D --> E[Pengguna menekan tombol]
+
+    E --> F{Jenis input?}
+
+    F --> G[Angka atau Titik]
+    G --> H[Tambahkan ke ekspresi]
+    H --> E
+
+    F --> I[Operator]
+    I --> J[Tambahkan operator ke ekspresi]
+    J --> E
+
+    F --> K[Tombol C]
+    K --> L[Hapus ekspresi]
+    L --> E
+
+    F --> M[Tombol √]
+    M --> N[Tambah operasi akar ke ekspresi]
+    N --> E
+
+    F --> O[Tombol =]
+    O --> P[Hitung ekspresi dengan eval]
+
+    P --> Q{Error?}
+
+    Q --> R[Tampilkan Error]
+    R --> E
+
+    Q --> S[Tampilkan hasil perhitungan]
+    S --> E
+
+    E --> T[Selesai]
+```
+
+
+G. Daftar Kontributor (Tabel): Nama, NIM, Link Agun git masing-masing anggota kelompok yang mengerjakan.
+
+daftar tabel
+| Nama Anggota | NIM | Link Akun Github |
+|--------------|------|------------------|
+| Wilson Doringin (Project Maintainer) | 250211060115 | https://github.com/Wil-isLearning |
+| Rey Jeheskiel Tumurang | 250211060071 | https://github.com/rey27-zx |
+| Brian Junianto Kabo | 250211060032 | https://github.com/briankabo |
+
+link repository kami
+| Link Repository | https://github.com/Wil-isLearning/Tugas-Kelompok-1-Kelas-F |
+
 
