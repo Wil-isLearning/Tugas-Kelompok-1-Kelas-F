@@ -51,11 +51,120 @@ Input Keyboard Penuh: Mendukung penekanan tombol fisik pada keyboard untuk semua
 - Struktur Modular: Kode dibagi menjadi kelas-kelas terpisah (Logic, Display, Button, App) yang memisahkan tanggung jawab (Logika dari Tampilan), sehingga kode lebih mudah dikelola dan diperluas.
 
 
-D. Panduan Instalasi: Langkah-langkah untuk mengunduh dan menyiapkan program (misal: git clone, install library). 
+D. Panduan Instalasi: Langkah-langkah untuk mengunduh dan menyiapkan program.
+Panduan Instalasi Kalkulator Python dari GitHub
+Panduan ini menjelaskan proses penyiapan proyek Python dari GitHub, mengasumsikan Anda memiliki Git dan Python 3.x yang sudah terinstal.
+
+1. Mengunduh Repositori (Git Clone)
+Langkah pertama adalah mendapatkan salinan lengkap dari kode proyek tersebut dari platform GitHub ke komputer lokal Anda.
+
+Penjelasan Detail:
+
+git clone: Ini adalah perintah dasar dalam Git yang berfungsi untuk menyalin repositori yang ada (misalnya, di GitHub) ke direktori lokal baru.
+
+URL Repositori: Anda perlu mengganti https://github.com/username/nama-repo-kalkulator.git dengan alamat yang benar. Alamat ini biasanya ditemukan di tombol "Code" pada halaman utama repositori GitHub.
+
+cd nama-repo-kalkulator: Setelah proses clone selesai, Git akan membuat folder baru sesuai nama repositori. Perintah cd (Change Directory) digunakan untuk masuk ke folder proyek tersebut, di mana semua operasi instalasi berikutnya akan dilakukan.
+
+Perintah: git clone https://github.com/Wil-isLearning/Tugas-Kelompok-1-Kelas-F
+
+
+2. Membuat dan Mengaktifkan Lingkungan Virtual (Opsional, Sangat Disarankan)
+Penggunaan Lingkungan Virtual (Virtual Environment) adalah praktik terbaik dalam pengembangan Python. Tujuannya adalah untuk mengisolasi dependensi proyek ini dari proyek Python lain di sistem Anda dan menjaga sistem global Python tetap bersih.
+
+Penjelasan Detail:
+
+python -m venv venv: Perintah ini menggunakan modul venv bawaan Python untuk membuat lingkungan virtual. Kata venv yang kedua adalah nama folder yang akan dibuat (Anda bisa menggantinya, tetapi venv adalah konvensi umum).
+
+Aktivasi: Setelah lingkungan dibuat, Anda harus mengaktifkannya. Aktivasi akan memastikan bahwa setiap perintah Python atau pip yang Anda jalankan hanya berlaku di dalam lingkungan yang terisolasi ini.
+
+Sistem operasi berbasis Unix (Linux/macOS) menggunakan skrip aktivasi yang dipanggil dengan source.
+
+Windows (Command Prompt/PowerShell) menggunakan skrip yang dieksekusi langsung.
+
+Indikator: Setelah aktif, Anda akan melihat teks (venv) muncul di awal prompt terminal Anda.
+
+Perintah: python -m venv venv
+
+Untuk Linux atau macOS (Bash/Zsh): source venv/bin/activate
+
+Untuk Windows (Command Prompt atau PowerShell): .\venv\Scripts\activate
+
+3. Menginstal Dependensi (Library)
+Proyek Python yang kompleks biasanya memerlukan library tambahan (dependensi) di luar standar Python. Dependensi ini didaftar dalam file bernama requirements.txt.
+
+Penjelasan Detail:
+
+requirements.txt: File ini berisi daftar nama dan versi spesifik dari semua library Python yang dibutuhkan agar proyek kalkulator dapat berjalan dengan benar (misalnya, jika kalkulator menggunakan library Tkinter untuk GUI atau Numpy untuk operasi matematika lanjutan).
+
+pip install -r requirements.txt: Perintah ini memberitahu pip (Package Installer for Python) untuk membaca daftar library dari file requirements.txt (-r berarti requirements) dan menginstalnya secara otomatis ke dalam lingkungan virtual yang sudah aktif.
+
+Perintah: pip install -r requirements.txt
+
+4. Menjalankan Program
+Ini adalah langkah terakhir, yaitu menjalankan skrip Python utama yang berisi logika kalkulator.
+
+Penjelasan Detail:
+
+python kalkulator.py: Perintah python akan menjalankan skrip yang ditentukan. Anda harus memastikan bahwa Anda menggunakan nama file yang benar dari repositori tersebut. Nama file umum adalah main.py, app.py, atau, dalam contoh ini, kalkulator.py.
+
+Output: Setelah perintah dijalankan, program kalkulator akan mulai berinteraksi dengan Anda, entah sebagai program baris perintah (konsol) yang meminta input angka, atau sebagai jendela aplikasi grafis (GUI) jika proyek tersebut menyediakannya.
+
+Perintah: python kalkulator.py
 
 
 
-E. Panduan Menjalankan: Perintah untuk menjalankan / konfigurasi program (misal: python app.py).
+E. Panduan Menjalankan: Perintah untuk menjalankan / konfigurasi program.
+Panduan Menjalankan Program: Kalkulator Sederhana Python
+Panduan ini berisi langkah-langkah untuk mengeksekusi dan berinteraksi dengan program Kalkulator Sederhana Python setelah semua langkah penyiapan telah selesai.
+
+1. Verifikasi Lingkungan Kerja
+Pastikan terminal Anda siap untuk menjalankan program dengan benar.
+
+Detail:
+
+Direktori Proyek: Anda harus berada di dalam folder proyek Kalkulator Sederhana Python di terminal Anda.
+
+Lingkungan Virtual: Lingkungan virtual harus aktif. Ini ditandai dengan munculnya (venv) di awal prompt terminal. Jika tidak ada, Anda perlu mengaktifkannya.
+
+Perintah untuk Mengaktifkan (Jika Belum Aktif):
+
+Untuk Sistem Linux atau macOS: source venv/bin/activate
+
+Untuk Sistem Windows: .\venv\Scripts\activate
+
+2. Perintah Eksekusi Program
+Gunakan perintah dasar Python untuk memulai program.
+
+Detail:
+
+Identifikasi File Utama: Asumsikan file entry point (titik masuk) program Kalkulator Sederhana Python adalah kalkulator.py atau main.py.
+
+Eksekusi: Panggil interpreter Python untuk menjalankan script.
+
+Perintah untuk Menjalankan: python kalkulator.py
+
+Jika Anda yakin nama file utamanya berbeda, ganti kalkulator.py dengan nama file yang sesuai.
+
+3. Interaksi dengan Kalkulator Sederhana Python
+Setelah perintah eksekusi berhasil, program akan mulai berjalan.
+
+Detail Interaksi:
+
+Kalkulator Konsol: Jika Kalkulator Sederhana Python berjalan di terminal, program akan menampilkan pesan (misalnya, "Masukkan operasi:") dan menunggu input Anda. Anda cukup mengetikkan perhitungan (contoh: 5 * 8) dan menekan Enter untuk melihat hasilnya.
+
+Kalkulator GUI: Jika program ini memiliki antarmuka grafis (walaupun sederhana), jendela baru akan muncul di layar. Interaksi dilakukan melalui klik mouse pada tombol-tombol di jendela tersebut.
+
+4. Pengakhiran Sesi Kerja
+Setelah selesai menggunakan Kalkulator Sederhana Python, Anda perlu menghentikan program dan keluar dari lingkungan kerja.
+
+Detail Pengakhiran:
+
+Menghentikan Program: Untuk program yang berjalan terus menerus di konsol, tekan Ctrl + C. Untuk program GUI, tutup jendelanya.
+
+Menonaktifkan venv: Pindah kembali ke lingkungan terminal sistem normal Anda.
+
+Perintah Menonaktifkan Lingkungan Virtual: deactivate
 
 
 
