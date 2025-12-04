@@ -1,6 +1,4 @@
-A. Judul Program: Nama aplikasi yang jelas.
-
-
+A. Judul Program: Kalkulator sederhana Python
 
 B. Pendahuluan: 1. CalculatorLogic (Model: Pengelola Data dan Aturan)
 Ini adalah "otak" dari kalkulator Anda, bertanggung jawab penuh atas semua perhitungan dan manajemen data.
