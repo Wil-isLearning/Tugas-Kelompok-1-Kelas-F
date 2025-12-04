@@ -26,10 +26,29 @@ Ini adalah kelas utama yang mengelola inisialisasi, pengaturan, dan aliran kontr
 - Binding Keyboard: Fungsi yang sangat penting adalah handle_keypress(). Ini memetakan tombol fisik pada keyboard (*, /, Enter, Backspace, Esc) ke fungsi kalkulator yang sesuai, memungkinkan pengguna untuk berinteraksi dengan cepat tanpa mengklik tombol di layar.
 - Run: Metode run() memulai mainloop() yang menjaga aplikasi tetap hidup dan responsif terhadap event (klik mouse atau penekanan tombol) hingga pengguna menutupnya.
 
+C. Fitur Utama: 1. Fungsionalitas Inti & Perhitungan
+- Operasi Dasar: Mendukung empat operasi aritmatika dasar (Penjumlahan +, Pengurangan -, Perkalian *, Pembagian /) dan Modulus %.
+- Perhitungan Akurat: Mampu mengevaluasi ekspresi matematika kompleks yang dimasukkan sebagai string (misalnya, (5 * 2) + 1).
+- Penanganan Error: Mampu mendeteksi dan menangani kesalahan umum, seperti pembagian dengan nol (ZeroDivisionError), dengan menampilkan pesan "Error (÷0)" di layar.
 
+2. Antarmuka Pengguna (UI) dan Interaksi
+- Desain Modern (CustomTkinter): Menggunakan CustomTkinter untuk menyediakan antarmuka bergaya modern, termasuk mode gelap (ctk.set_appearance_mode("dark")) dan elemen dengan sudut membulat.
+- Tombol Interaktif: Menyediakan tata letak tombol 5x4 yang intuitif, termasuk angka 0-9, operator, dan tombol kontrol.
+- Visualisasi Operator: Mengubah operator internal Python (*, /) menjadi simbol yang lebih jelas pada tampilan (yaitu, × dan ÷).
+- Pemisahan Warna Tombol: Menggunakan skema warna yang berbeda untuk membedakan fungsi tombol (Merah untuk Clear, Hijau untuk Equals, Biru untuk Operator, Abu-abu untuk Angka).
 
-C. Fitur Utama: Daftar fitur yang dimiliki program.
+3. Kontrol Input dan Logika
+Input Keyboard Penuh: Mendukung penekanan tombol fisik pada keyboard untuk semua input:
+- Angka, +, -, *, /.
+- Enter atau Return untuk menghitung hasil (=).
+- BackSpace untuk menghapus satu karakter.
+- Escape (Esc) untuk menghapus seluruh ekspresi (C).
+- Pencegahan Operator Ganda: Memiliki logika untuk mencegah ekspresi tidak valid seperti 5++ atau 10// dengan mengganti operator terakhir.
+- Kontrol Display: Tampilan input/output diatur sebagai read-only (state="readonly"), mencegah pengguna mengetik teks atau karakter yang tidak valid secara langsung.
 
+4. Arsitektur dan Keterhubungan
+- Callback Tampilan: Menggunakan mekanisme callback (set_update_callback) untuk memastikan Logika dan Tampilan terhubung, sehingga setiap perubahan ekspresi segera diperbarui di layar secara real-time.
+- Struktur Modular: Kode dibagi menjadi kelas-kelas terpisah (Logic, Display, Button, App) yang memisahkan tanggung jawab (Logika dari Tampilan), sehingga kode lebih mudah dikelola dan diperluas.
 
 
 D. Panduan Instalasi: Langkah-langkah untuk mengunduh dan menyiapkan program (misal: git clone, install library). 
